@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Folder Contents</title>
+</head>
+<body>
+	<h1>Contents of Your Folder:</h1>
+	<ul>
+	{% for file in files %}
+		<li>{{ file }} 
+			<form action="{% url 'open_file' %}" method="post" style="display: inline;">
+				{% csrf_token %}
+				<input type="hidden" name="file" value="{{ file }}">
+				<button type="submit">Open</button>
+			</form>
+			<form action="{% url 'download_file' %}" method="post" style="display: inline;">
+				{% csrf_token %}
+				<input type="hidden" name="file" value="{{ file }}">
+				<button type="submit">Download</button>
+			</form>
+		</li>
+	{% endfor %}
+	</ul>
+</body>
+</html>
