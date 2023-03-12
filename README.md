@@ -18,5 +18,8 @@ S.No File Action
  On Open, Read the Data inside the file using Pandas or any other package and render it as a
 table.
 
+### Ui-Flow-chart
 ![UI](https://user-images.githubusercontent.com/91648370/224562804-766ea455-62d5-4bf6-87cf-997bca6a8f95.png)
+
+### Backend-Flow-Chart
 ![Backend](https://user-images.githubusercontent.com/91648370/224562917-be9fae05-bb7e-4fd5-aa42-fff1ec162143.png)
